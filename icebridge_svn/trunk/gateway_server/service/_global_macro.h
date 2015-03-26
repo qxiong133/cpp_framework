@@ -1,0 +1,46 @@
+/*
+ * _global_macro.h
+ *
+ *  Created on: Oct 12, 2013
+ *      Author: root
+ */
+
+#ifndef GLOBAL_MACRO_H_
+#define GLOBAL_MACRO_H_
+
+
+#define MAX_CLIENT 20000
+
+#define SCORE_REWARD_MOOD_FACTORY 	0
+#define SCORE_REWARD_STONE_FACTORY  1
+#define SCORE_REWARD_IRON_FACTORY	2
+#define SCORE_REWARD_MOOD_HOUSE		3
+#define SCORE_REWARD_FOLK_HOUSE		4
+#define SCORE_REWARD_OX_FENCE		5
+#define SCORE_REWARD_SOLDIERS_HOUSE	6
+#define SCORE_REWARD_FIGHT_GUILD	7
+#define SCORE_REWARD_MAGIC_GUILD	8
+#define SCORE_REWARD_CAMP			9
+#define SCORE_REWARD_LAB			10
+#define SCORE_REWARD_REFINERY		11
+#define SCORE_REWARD_TAVERN			12
+#define SCORE_REWARD_MARKET			13
+#define GOLD_REWARD_PLUNDER			14
+#define GOLD_REWARD_SYSTEM			15
+#define MAX_GAIN_INDEX				15
+
+
+#define MAX_TOWER_TYPE				24
+
+
+//Simple Response Option
+#define SUCCESS 0
+#define UUID_PASSWD_ERROR -1
+#define EMAIL_PASSWD_ERROR -2
+#define EMAIL_IS_EXSIT -3
+#define PARAMETER_ERROR -4
+#define NAME_IS_EXSIT -5
+#define SPACE_NOT_ENOUGH  -6
+#define MONEY_NOT_ENOUGH -7
+
+#endif /* GLOBAL_MACRO_H_ */

@@ -1,0 +1,21 @@
+#include "UserInfo.h"
+#include "GameLog.h"
+#include "GameUtils.h"
+#include "json/json.h"
+#include <iostream>
+#include "MysqlManager.h"
+using namespace std;
+
+int main() {
+	RedisClient *redis = new RedisClient();
+	UserInfo user(1, redis);
+	user.init();
+	user.test();
+	cout << "==================" << endl;
+	//mysql test
+	MysqlManager mysql;
+	int ret = mysql.regUser("edwinxie@gmail.com", "123");
+	cout << "ret = " << ret << endl;
+	return 0;
+}
+

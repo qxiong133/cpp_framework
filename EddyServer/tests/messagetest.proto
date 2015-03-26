@@ -1,0 +1,18 @@
+package messagetest;
+
+message MessageA {
+  required string name = 1;
+  required int32 id = 2;
+
+  message Widget {
+    required string number = 1;
+    optional int32 type = 2 [default = 0];
+  }
+
+  repeated Widget list = 3;
+}
+
+message MessageB {
+  required string name = 1;
+  required int32 id = 2;
+}

@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BrokerWorker	worker.hpp	/^    BrokerWorker(std::string identity, Service * service = 0, int64_t expiry = 0) {$/;"	f	language:C++	class:BrokerWorker	access:private	signature:(std::string identity, Service * service = 0, int64_t expiry = 0)
+BrokerWorker	worker.hpp	/^class BrokerWorker {$/;"	c	language:C++
+BrokerWorker::BrokerWorker	worker.hpp	/^    BrokerWorker(std::string identity, Service * service = 0, int64_t expiry = 0) {$/;"	f	language:C++	class:BrokerWorker	access:private	signature:(std::string identity, Service * service = 0, int64_t expiry = 0)
+BrokerWorker::expired	worker.hpp	/^   expired ()$/;"	f	language:C++	class:BrokerWorker	access:public	signature:()
+BrokerWorker::m_expiry	worker.hpp	/^    int64_t m_expiry;         \/\/  Expires at unless heartbeat$/;"	m	language:C++	class:BrokerWorker	access:private
+BrokerWorker::m_identity	worker.hpp	/^    std::string m_identity;   \/\/  Address of worker$/;"	m	language:C++	class:BrokerWorker	access:private
+BrokerWorker::m_requests	worker.hpp	/^    std::vector<zmsg*> m_requests;   \/\/  List of client requests that the worker is processing$/;"	m	language:C++	class:BrokerWorker	access:private
+BrokerWorker::m_service	worker.hpp	/^    Service * m_service;      \/\/  Owning service, if known$/;"	m	language:C++	class:BrokerWorker	access:private
+BrokerWorker::~BrokerWorker	worker.hpp	/^   ~BrokerWorker ()$/;"	f	language:C++	class:BrokerWorker	access:public	signature:()
+CreateService	service.hpp	/^        static Service * CreateService(std::string service_type, std::string service_name){$/;"	f	language:C++	class:ServiceFactory	access:public	signature:(std::string service_type, std::string service_name)
+HEARTBEAT_EXPIRY	mdbroker.cpp	20;"	d	language:C++	file:
+HEARTBEAT_INTERVAL	mdbroker.cpp	19;"	d	language:C++	file:
+HEARTBEAT_LIVENESS	mdbroker.cpp	18;"	d	language:C++	file:
+Service	service.hpp	/^        Service(std::string name)$/;"	f	language:C++	class:Service	access:protected	signature:(std::string name)
+Service	service.hpp	/^class Service {$/;"	c	language:C++
+Service::Service	service.hpp	/^        Service(std::string name)$/;"	f	language:C++	class:Service	access:protected	signature:(std::string name)
+Service::delete_worker	service.hpp	/^        virtual void delete_worker(BrokerWorker *worker){$/;"	f	language:C++	class:Service	access:public	signature:(BrokerWorker *worker)
+Service::has_actived_worker	service.hpp	/^        virtual int has_actived_worker(){$/;"	f	language:C++	class:Service	access:public	signature:()
+Service::m_name	service.hpp	/^        std::string m_name;             \/\/  Service name$/;"	m	language:C++	class:Service	access:protected
+Service::m_requests	service.hpp	/^        std::vector<zmsg*> m_requests;   \/\/  List of client requests$/;"	m	language:C++	class:Service	access:protected
+Service::m_waiting	service.hpp	/^        std::vector<BrokerWorker*> m_waiting;  \/\/  List of actived workers$/;"	m	language:C++	class:Service	access:protected
+Service::pop_request	service.hpp	/^        virtual zmsg * pop_request(){$/;"	f	language:C++	class:Service	access:public	signature:()
+Service::pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker() = 0;$/;"	p	language:C++	class:Service	access:public	signature:()
+Service::worker_waiting	service.hpp	/^        virtual void worker_waiting(BrokerWorker * worker){$/;"	f	language:C++	class:Service	access:public	signature:(BrokerWorker * worker)
+Service::~Service	service.hpp	/^        virtual ~Service ()$/;"	f	language:C++	class:Service	access:public	signature:()
+ServiceDoNotWaitResponse	service.hpp	/^        ServiceDoNotWaitResponse(std::string name)$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:(std::string name)
+ServiceDoNotWaitResponse	service.hpp	/^class ServiceDoNotWaitResponse : public Service{$/;"	c	language:C++	inherits:Service
+ServiceDoNotWaitResponse::ServiceDoNotWaitResponse	service.hpp	/^        ServiceDoNotWaitResponse(std::string name)$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:(std::string name)
+ServiceDoNotWaitResponse::if_pos_init	service.hpp	/^        bool if_pos_init;$/;"	m	language:C++	class:ServiceDoNotWaitResponse	access:private
+ServiceDoNotWaitResponse::pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker(){$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:()
+ServiceDoNotWaitResponse::pos	service.hpp	/^        std::vector<BrokerWorker*>::iterator pos;$/;"	m	language:C++	class:ServiceDoNotWaitResponse	access:private
+ServiceDoNotWaitResponse::~ServiceDoNotWaitResponse	service.hpp	/^        ~ServiceDoNotWaitResponse(){$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:()
+ServiceFactory	service.hpp	/^class ServiceFactory{$/;"	c	language:C++
+ServiceFactory::CreateService	service.hpp	/^        static Service * CreateService(std::string service_type, std::string service_name){$/;"	f	language:C++	class:ServiceFactory	access:public	signature:(std::string service_type, std::string service_name)
+ServiceWaitResponse	service.hpp	/^        ServiceWaitResponse(std::string name)$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:(std::string name)
+ServiceWaitResponse	service.hpp	/^class ServiceWaitResponse : public Service{$/;"	c	language:C++	inherits:Service
+ServiceWaitResponse::ServiceWaitResponse	service.hpp	/^        ServiceWaitResponse(std::string name)$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:(std::string name)
+ServiceWaitResponse::pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker(){$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:()
+ServiceWaitResponse::~ServiceWaitResponse	service.hpp	/^        virtual ~ServiceWaitResponse(){$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:()
+__broker_service__	service.hpp	3;"	d	language:C++
+__broker_worker__	worker.hpp	3;"	d	language:C++
+bind	mdbroker.cpp	/^   bind (std::string endpoint)$/;"	f	language:C++	class:broker	access:public	signature:(std::string endpoint)
+broker	mdbroker.cpp	/^   broker (int verbose,const char *identity)$/;"	f	language:C++	class:broker	access:public	signature:(int verbose,const char *identity)
+broker	mdbroker.cpp	/^class broker {$/;"	c	language:C++	file:
+broker::bind	mdbroker.cpp	/^   bind (std::string endpoint)$/;"	f	language:C++	class:broker	access:public	signature:(std::string endpoint)
+broker::broker	mdbroker.cpp	/^   broker (int verbose,const char *identity)$/;"	f	language:C++	class:broker	access:public	signature:(int verbose,const char *identity)
+broker::client_process	mdbroker.cpp	/^   client_process (std::string sender, zmsg *&msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string sender, zmsg *&msg)
+broker::client_send	mdbroker.cpp	/^   void client_send(std::string client,$/;"	f	language:C++	class:broker	access:public	signature:(std::string client, char *command, std::string option)
+broker::clients_set	mdbroker.cpp	/^   typedef boost::unordered_set<string> clients_set;$/;"	t	language:C++	class:broker	file:	access:public
+broker::m_clients	mdbroker.cpp	/^    clients_set m_clients;$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_context	mdbroker.cpp	/^    zmq::context_t * m_context;                  \/\/  0MQ context$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_endpoint	mdbroker.cpp	/^    std::string m_endpoint;                      \/\/  Broker binds to this endpoint$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_heartbeat_at	mdbroker.cpp	/^    int64_t m_heartbeat_at;                     \/\/  When to send HEARTBEAT$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_identity	mdbroker.cpp	/^    std::string m_identity;                      \/\/  Broker name$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_services	mdbroker.cpp	/^    std::map<std::string, Service*> m_services;  \/\/  Hash of known services$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_socket	mdbroker.cpp	/^    zmq::socket_t * m_socket;                    \/\/  Socket for clients & workers$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_verbose	mdbroker.cpp	/^    int m_verbose;                               \/\/  Print activity to stdout$/;"	m	language:C++	class:broker	file:	access:private
+broker::m_workers	mdbroker.cpp	/^    std::map<std::string, BrokerWorker*> m_workers;    \/\/  Hash of known workers$/;"	m	language:C++	class:broker	file:	access:private
+broker::service_dispatch	mdbroker.cpp	/^   service_dispatch (Service *srv, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(Service *srv, zmsg *msg)
+broker::service_internal	mdbroker.cpp	/^   service_internal (std::string service_name, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string service_name, zmsg *msg)
+broker::service_require	mdbroker.cpp	/^   service_require (std::string service_name,std::string service_type = "ServiceDoNotWaitResponse")$/;"	f	language:C++	class:broker	access:public	signature:(std::string service_name,std::string service_type = Ó)
+broker::start_brokering	mdbroker.cpp	/^   start_brokering() {$/;"	f	language:C++	class:broker	access:public	signature:()
+broker::worker_delete	mdbroker.cpp	/^   worker_delete (BrokerWorker *&wrk, int disconnect)$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *&wrk, int disconnect)
+broker::worker_process	mdbroker.cpp	/^   void worker_process (std::string sender, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string sender, zmsg *msg)
+broker::worker_require	mdbroker.cpp	/^   worker_require (std::string identity)$/;"	f	language:C++	class:broker	access:public	signature:(std::string identity)
+broker::worker_send	mdbroker.cpp	/^   worker_send (BrokerWorker *worker,$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *worker, char *command, std::string option, zmsg *_msg)
+broker::worker_waiting	mdbroker.cpp	/^   worker_waiting (BrokerWorker *worker)$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *worker)
+broker::~broker	mdbroker.cpp	/^   ~broker ()$/;"	f	language:C++	class:broker	access:public	signature:()
+client_process	mdbroker.cpp	/^   client_process (std::string sender, zmsg *&msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string sender, zmsg *&msg)
+client_send	mdbroker.cpp	/^   void client_send(std::string client,$/;"	f	language:C++	class:broker	access:public	signature:(std::string client, char *command, std::string option)
+clients_set	mdbroker.cpp	/^   typedef boost::unordered_set<string> clients_set;$/;"	t	language:C++	class:broker	file:	access:public
+delete_worker	service.hpp	/^        virtual void delete_worker(BrokerWorker *worker){$/;"	f	language:C++	class:Service	access:public	signature:(BrokerWorker *worker)
+expired	worker.hpp	/^   expired ()$/;"	f	language:C++	class:BrokerWorker	access:public	signature:()
+has_actived_worker	service.hpp	/^        virtual int has_actived_worker(){$/;"	f	language:C++	class:Service	access:public	signature:()
+if_pos_init	service.hpp	/^        bool if_pos_init;$/;"	m	language:C++	class:ServiceDoNotWaitResponse	access:private
+m_clients	mdbroker.cpp	/^    clients_set m_clients;$/;"	m	language:C++	class:broker	file:	access:private
+m_context	mdbroker.cpp	/^    zmq::context_t * m_context;                  \/\/  0MQ context$/;"	m	language:C++	class:broker	file:	access:private
+m_endpoint	mdbroker.cpp	/^    std::string m_endpoint;                      \/\/  Broker binds to this endpoint$/;"	m	language:C++	class:broker	file:	access:private
+m_expiry	worker.hpp	/^    int64_t m_expiry;         \/\/  Expires at unless heartbeat$/;"	m	language:C++	class:BrokerWorker	access:private
+m_heartbeat_at	mdbroker.cpp	/^    int64_t m_heartbeat_at;                     \/\/  When to send HEARTBEAT$/;"	m	language:C++	class:broker	file:	access:private
+m_identity	mdbroker.cpp	/^    std::string m_identity;                      \/\/  Broker name$/;"	m	language:C++	class:broker	file:	access:private
+m_identity	worker.hpp	/^    std::string m_identity;   \/\/  Address of worker$/;"	m	language:C++	class:BrokerWorker	access:private
+m_name	service.hpp	/^        std::string m_name;             \/\/  Service name$/;"	m	language:C++	class:Service	access:protected
+m_requests	service.hpp	/^        std::vector<zmsg*> m_requests;   \/\/  List of client requests$/;"	m	language:C++	class:Service	access:protected
+m_requests	worker.hpp	/^    std::vector<zmsg*> m_requests;   \/\/  List of client requests that the worker is processing$/;"	m	language:C++	class:BrokerWorker	access:private
+m_service	worker.hpp	/^    Service * m_service;      \/\/  Owning service, if known$/;"	m	language:C++	class:BrokerWorker	access:private
+m_services	mdbroker.cpp	/^    std::map<std::string, Service*> m_services;  \/\/  Hash of known services$/;"	m	language:C++	class:broker	file:	access:private
+m_socket	mdbroker.cpp	/^    zmq::socket_t * m_socket;                    \/\/  Socket for clients & workers$/;"	m	language:C++	class:broker	file:	access:private
+m_verbose	mdbroker.cpp	/^    int m_verbose;                               \/\/  Print activity to stdout$/;"	m	language:C++	class:broker	file:	access:private
+m_waiting	service.hpp	/^        std::vector<BrokerWorker*> m_waiting;  \/\/  List of actived workers$/;"	m	language:C++	class:Service	access:protected
+m_workers	mdbroker.cpp	/^    std::map<std::string, BrokerWorker*> m_workers;    \/\/  Hash of known workers$/;"	m	language:C++	class:broker	file:	access:private
+main	mdbroker.cpp	/^int main (int argc, char *argv [])$/;"	f	language:C++	signature:(int argc, char *argv [])
+pop_request	service.hpp	/^        virtual zmsg * pop_request(){$/;"	f	language:C++	class:Service	access:public	signature:()
+pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker() = 0;$/;"	p	language:C++	class:Service	access:public	signature:()
+pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker(){$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:()
+pop_worker	service.hpp	/^        virtual BrokerWorker * pop_worker(){$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:()
+pos	service.hpp	/^        std::vector<BrokerWorker*>::iterator pos;$/;"	m	language:C++	class:ServiceDoNotWaitResponse	access:private
+service_dispatch	mdbroker.cpp	/^   service_dispatch (Service *srv, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(Service *srv, zmsg *msg)
+service_internal	mdbroker.cpp	/^   service_internal (std::string service_name, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string service_name, zmsg *msg)
+service_require	mdbroker.cpp	/^   service_require (std::string service_name,std::string service_type = "ServiceDoNotWaitResponse")$/;"	f	language:C++	class:broker	access:public	signature:(std::string service_name,std::string service_type = Ó)
+start_brokering	mdbroker.cpp	/^   start_brokering() {$/;"	f	language:C++	class:broker	access:public	signature:()
+worker_delete	mdbroker.cpp	/^   worker_delete (BrokerWorker *&wrk, int disconnect)$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *&wrk, int disconnect)
+worker_process	mdbroker.cpp	/^   void worker_process (std::string sender, zmsg *msg)$/;"	f	language:C++	class:broker	access:public	signature:(std::string sender, zmsg *msg)
+worker_require	mdbroker.cpp	/^   worker_require (std::string identity)$/;"	f	language:C++	class:broker	access:public	signature:(std::string identity)
+worker_send	mdbroker.cpp	/^   worker_send (BrokerWorker *worker,$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *worker, char *command, std::string option, zmsg *_msg)
+worker_waiting	mdbroker.cpp	/^   worker_waiting (BrokerWorker *worker)$/;"	f	language:C++	class:broker	access:public	signature:(BrokerWorker *worker)
+worker_waiting	service.hpp	/^        virtual void worker_waiting(BrokerWorker * worker){$/;"	f	language:C++	class:Service	access:public	signature:(BrokerWorker * worker)
+~BrokerWorker	worker.hpp	/^   ~BrokerWorker ()$/;"	f	language:C++	class:BrokerWorker	access:public	signature:()
+~Service	service.hpp	/^        virtual ~Service ()$/;"	f	language:C++	class:Service	access:public	signature:()
+~ServiceDoNotWaitResponse	service.hpp	/^        ~ServiceDoNotWaitResponse(){$/;"	f	language:C++	class:ServiceDoNotWaitResponse	access:public	signature:()
+~ServiceWaitResponse	service.hpp	/^        virtual ~ServiceWaitResponse(){$/;"	f	language:C++	class:ServiceWaitResponse	access:public	signature:()
+~broker	mdbroker.cpp	/^   ~broker ()$/;"	f	language:C++	class:broker	access:public	signature:()

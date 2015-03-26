@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+PROJECT(gameServer)
+#ADD_SUBDIRECTORY(router)
+#ADD_SUBDIRECTORY(gateway_server)
+ADD_SUBDIRECTORY(workers)
+#ADD_SUBDIRECTORY(developing)
+SET(CMAKE_INSTALL_PREFIX ${PROJECT_BINARY_DIR}/output)
+INSTALL(DIRECTORY log conf script lib  module DESTINATION ${PROJECT_BINARY_DIR}/output)
+INSTALL(DIRECTORY workers/python_worker DESTINATION ${PROJECT_BINARY_DIR}/output/worker)
+                        

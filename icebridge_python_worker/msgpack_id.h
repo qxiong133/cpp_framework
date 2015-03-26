@@ -1,0 +1,169 @@
+#ifndef MSGPACK_ID_H_
+#define MSGPACK_ID_H_
+
+typedef enum Request_ID{
+
+	ServerChallengeRequest_ID = 1000,//1
+	HeartBeatRequest_ID,//2
+	ArmsConfigRequest_ID,//3
+	BuildConfigRequest_ID,//4
+	RegisterRequest_ID,//5
+	SetNameRequest_ID,//6
+	BindEmailRequest_ID,//7
+	AttackEnemyRequest_ID,//8
+	BuildStatusListRequest_ID,//9
+	BuildCreateRequest_ID,//10
+	BuildUpgradeRequest_ID,//11
+	GetMyAssetRequest_ID,//12
+	LoginRequest_ID,//13
+	GetRandNameRequest_ID,//14
+	DressEquipRequest_ID,//15
+	UnloadEquipRequest_ID,//16
+	SaleGoodsRequest_ID,//17
+	LookMarketGoodsRequest_ID,//18
+	BuyMarketGoodsRequest_ID,//19
+	OpenBoxRequest_ID,//20
+	RecruitRequest_ID,//21
+	GetRandHeroRequest_ID,//22
+	DropHeroRequest_ID,//23
+	GetEmailGoodsRequest_ID,//24
+	EmailNextPageRequst_ID,//25
+	FastFinishRequest_ID,//26
+	UpgradeArmTypeRequest_ID,//27
+	LogoutRequest_ID,//28
+	WorldMapNearByRequest_ID,//29
+	RandomNewMapRequest_ID,//30
+	RandomMoveCityRequest_ID,//31
+	SettleMoveCityRequest_ID,//32
+	HeroMoveRequest_ID,//33
+	WorldMapEnterCityRequest_ID,//34
+	WorldMapPlunderResourceRequest_ID,//35
+	LookUpCityRequest_ID,//36
+	PVEAttackRequest_ID,//37
+	KillMonsterRequest_ID,//38
+	LeaveWordMapRequest_ID,//39
+	WorldChannelMsgRequest_ID,//40
+	UnionChannelRequest_ID,//41
+	PrivateChannelRequest_ID,//42
+	FindFriendRequest_ID,//43
+	CreateUnionRequest_ID,//44
+	LeaveUnionRequest_ID,//45
+	AddUnionRequest_ID,//46
+	SoldierInfoRequest_ID,//47
+	ChangeSoldierCampRequest_ID,//48
+	CompleteAtOnceRequest_ID,//49
+	msgStartAttack_ID,//50
+	msgHeroCastSkillRequest_ID,//51
+	msgObjectDieRequest_ID,//52
+	msgHeroMoveRequest_ID,//53
+	battleSoldier_ID,//54
+	battleBuilding_ID,//55
+	msgCurBattleInfoRequest_ID,//56
+	stateSoldier_ID,//57
+	stateBuilding_ID,//58
+	msgDfderIsreadyRequest_ID,//59
+	msgReportCurStateRequest_ID,//60
+	msgSetRallypointRequest_ID,//61
+	msgAtkerStopBattleRequest_ID,//62
+	SearchGroupRequest_ID,//63
+	JoinGroupRequest_ID,//64
+	GetJoinRequest_ID,//65
+	AcceptJoinRequest_ID,//66
+	ExitGroupRequest_ID,//67
+	CreateGroupRequest_ID,//68
+	PublicGroupMessageRequest_ID,//69
+	GetGroupInfoRequest_ID//70
+
+}RequestID;
+
+typedef enum Response_ID{
+
+	ServerChallengeResponse_ID = 1000,//1
+	VersionInforResponse_ID,//2
+	ArmsResponse_ID,//3
+	ArmsListResponse_ID,//4
+	BuildListResponse_ID,//5
+	AccountInfoResponse_ID,//6
+	SimpleResponse_ID,//7
+	MyBuildDataResponse_ID,//8
+	MyAttruibuteResponse_ID,//9
+	EnemyAttruibuteResponse_ID,//10
+	AssetResponse_ID,//11
+	DiamondReponse_ID,//12
+	RandNameResponse_ID,//13
+	EquipResponse_ID,//14
+	EquipListResponse_ID,//15
+	MarketGoodsResponse_ID,//16
+	MarketListResponse_ID,//17
+	HeroResponse_ID,//18
+	HeroListResponse_ID,//19
+	RecruitResponse_ID,//20
+	GetMyAssetResponse_ID,//21
+	CityLimitListResponse_ID,//22
+	EmailSaleResponse_ID,//23
+	EmailSaleListResponse_ID,//24
+	BattleLogResponse_ID,//25
+	MyArmpsLevelResponse_ID,//26
+	MyWorldMapCoordResponse_ID,//27
+	WorldMapPlayerInfoResponse_ID,//28
+	WorldMapResourceResponse_ID,//29
+	WorldMapMonsterResponse_ID,//30
+	NearByPlayerInfoResponse_ID,//31
+	NearByResourceResponse_ID,//32
+	NearByMapMonsterResponse_ID,//33
+	WorlMapNearByResponse_ID,//34
+	NearByAreaResponse_ID,//35
+	LookUpCityResponse_ID,//36
+	AbleAttackCityResponse_ID,//37
+	PVEAttackResponse_ID,//38
+	ChangeWorlMapStatusResponse_ID,//39
+	PVEWinResponse_ID,//40
+	WorldChannelMsgResponse_ID,//41
+	UnionChannelResponse_ID,//42
+	PrivateChannelResponse_ID,//43
+	SystemBroadCastResponse_ID,//44
+	FindFriendResponse_ID,//45
+	MemberResponse_ID,//46
+	UnionInfoResponse_ID,//47
+	SoldierProcessResponse_ID,//48
+	TimeIsUpResponse_ID,//49
+	VectorCampInfoResponse_ID,//50
+	CampInfoResponse_ID,//51
+	soldier_ID,//52
+	CompleteAtOnceResponse_ID,//53
+	soldiersInfoResponse_ID,//54
+	msgStartAtkToAtkerResponse_ID,//55
+	msgStartAtkToDfderResponse_ID,//56
+	msgHeroCastSkillResponse_ID,//57
+	msgObjectDieResponse_ID,//58
+	msgHeroMoveResponse_ID,//59
+	msgDfderLoginResponse_ID,//60
+	msgBeingAtkResponse_ID,//61
+	msgCurBattleInfoResponse_ID,//62
+	msgDfderIsreadyResponse_ID,//63
+	msgDfderLogoutResponse_ID,//64
+	msgAtkerLogoutResponse_ID,//65
+	msgAskCurStateResponse_ID,//66
+	msgReportCurStateResponse_ID,//67
+	msgReportBattleResultToAtkerResponse_ID,//68
+	msgReportBattleResultToDfderResponse_ID,//69
+	msgSetRallypointResponse_ID,//70
+	msgRequestAckResponse_ID,//71
+	msgAtkerStopBattleToDfderResponse_ID,//72
+	msgAtkerStopBattleToAtkerResponse_ID,//73
+	SearchGroupResponse_ID,//74
+	JoinGroupResponse_ID,//75
+	GetJoinRequestResponse_ID,//76
+	AcceptJoinResponse_ID,//77
+	ExitGroupResponse_ID,//78
+	CreateGroupResponse_ID,//79
+	PublicGroupMessageResponse_ID,//80
+	GetGroupInfoResponse_ID,//81
+	GetTop20GroupResponse_ID,//82
+	GetTop50UserResponse_ID//83
+
+}ResponseID;
+
+#define MAX_REQ_NUM 70
+
+#endif /* MSGPACK_ID_H */

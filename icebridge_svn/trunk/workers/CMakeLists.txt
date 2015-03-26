@@ -1,0 +1,2 @@
+#ADD_SUBDIRECTORY(simple_worker)
+ADD_SUBDIRECTORY(small_map_worker)

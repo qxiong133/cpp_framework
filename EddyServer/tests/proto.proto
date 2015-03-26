@@ -1,0 +1,14 @@
+package proto;
+
+message MessageA {
+  required string name = 1;
+}
+
+message MessageB {
+  required string name = 1;
+  optional int32 int_val = 2;
+}
+
+message MessageC {
+  required string name = 1;
+}

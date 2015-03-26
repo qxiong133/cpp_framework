@@ -1,0 +1,5 @@
+svn使用说明
+trunk是主干
+branches下面可以打分支
+tags发布版本
+personal下面建立个人目录，可以用于个人代码，脚本的存储

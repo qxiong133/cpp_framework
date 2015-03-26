@@ -1,3 +1,5 @@
 #todo
 #1.add icebridge code for cpp framework
-#2.add nginx code for c framework
+
+#EddyServer
+#一个线程accept连接，多个线程启用boost_io进行socket多路复用监听，数据接收reday进行解密，协议解析，分发给不同的任务处理线程进行处理，任务线程处理完毕，把response传给socket线程进行数据返回给客户端。

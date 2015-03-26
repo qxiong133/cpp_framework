@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BATTLEMAPMANAGER	BattleMapManager.h	2;"	d	language:C++
+BATTLEMAP_H	BattleMap.h	9;"	d	language:C++
+BOOST_LOCKING_QUEUE_HPP	LockingQueue.h	11;"	d	language:C++
+BattleMap	BattleMap.cpp	/^BattleMap::BattleMap(unsigned int aID, unsigned int dID) : attackerID(aID), defenderID(dID),$/;"	f	language:C++	class:BattleMap	signature:(unsigned int aID, unsigned int dID)
+BattleMap	BattleMap.h	/^    BattleMap(unsigned int aID, unsigned int dID);$/;"	p	language:C++	class:BattleMap	access:public	signature:(unsigned int aID, unsigned int dID)
+BattleMap	BattleMap.h	/^class BattleMap {$/;"	c	language:C++
+BattleMap::BattleMap	BattleMap.cpp	/^BattleMap::BattleMap(unsigned int aID, unsigned int dID) : attackerID(aID), defenderID(dID),$/;"	f	language:C++	class:BattleMap	signature:(unsigned int aID, unsigned int dID)
+BattleMap::BattleMap	BattleMap.h	/^    BattleMap(unsigned int aID, unsigned int dID);$/;"	p	language:C++	class:BattleMap	access:public	signature:(unsigned int aID, unsigned int dID)
+BattleMap::attackerID	BattleMap.h	/^    unsigned int attackerID;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::defenderID	BattleMap.h	/^    unsigned int defenderID;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::getAtkerID	BattleMap.h	/^    unsigned int getAtkerID() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getAtkerPoint	BattleMap.h	/^    int getAtkerPoint() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getConcreteLoot	BattleMap.h	/^    int getConcreteLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getCurTick	BattleMap.h	/^    unsigned short getCurTick() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getDfderID	BattleMap.h	/^    unsigned int getDfderID() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getDfderPoint	BattleMap.h	/^    int getDfderPoint() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getIsStart	BattleMap.h	/^    bool getIsStart() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getOreLoot	BattleMap.h	/^    int getOreLoot()const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getStarNum	BattleMap.h	/^    unsigned short getStarNum() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getStoneLoot	BattleMap.h	/^    int getStoneLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::getWoodLoot	BattleMap.h	/^    int getWoodLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+BattleMap::mAtkerPoint	BattleMap.h	/^    int mAtkerPoint;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mBuildingNum	BattleMap.h	/^    unsigned int mBuildingNum; \/\/建筑总数$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mConcreteLoot	BattleMap.h	/^    int mConcreteLoot;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mDfderPoint	BattleMap.h	/^    int mDfderPoint;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mDiedBuildingNum	BattleMap.h	/^    unsigned int mDiedBuildingNum;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mIsStart	BattleMap.h	/^    bool mIsStart;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mOreLoot	BattleMap.h	/^    int mOreLoot;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mStarNum	BattleMap.h	/^    unsigned short mStarNum; \/\/星级$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mStoneLoot	BattleMap.h	/^    int mStoneLoot;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mTicks	BattleMap.h	/^    unsigned int mTicks; \/\/节拍计数, 三分钟计时, 3min = 180s = 1800*100ms$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mTownhallIsDied	BattleMap.h	/^    bool mTownhallIsDied; \/\/市政厅是否已摧毁$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::mWoodLoot	BattleMap.h	/^    int mWoodLoot;$/;"	m	language:C++	class:BattleMap	access:private
+BattleMap::plusCurTick	BattleMap.h	/^    void plusCurTick() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+BattleMap::plusDiedBuildingNum	BattleMap.h	/^    void plusDiedBuildingNum() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+BattleMap::setConcreteLoot	BattleMap.h	/^    void setConcreteLoot(int concreteLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int concreteLoot)
+BattleMap::setIsStart	BattleMap.h	/^    void setIsStart(bool isStart) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(bool isStart)
+BattleMap::setOreLoot	BattleMap.h	/^    void setOreLoot(int oreLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int oreLoot)
+BattleMap::setStoneLoot	BattleMap.h	/^    void setStoneLoot(int stoneLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int stoneLoot)
+BattleMap::setTownhallDied	BattleMap.h	/^    void setTownhallDied() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+BattleMap::setWoodLoot	BattleMap.h	/^    void setWoodLoot(int woodLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int woodLoot)
+BattleMap::update	BattleMap.cpp	/^void BattleMap::update() {$/;"	f	language:C++	class:BattleMap	signature:()
+BattleMap::update	BattleMap.h	/^    void update();$/;"	p	language:C++	class:BattleMap	access:public	signature:()
+BattleMap::~BattleMap	BattleMap.cpp	/^BattleMap::~BattleMap() {$/;"	f	language:C++	class:BattleMap	signature:()
+BattleMap::~BattleMap	BattleMap.h	/^    ~BattleMap();$/;"	p	language:C++	class:BattleMap	access:public	signature:()
+BattleMaps	BattleMapManager.h	/^typedef std::map< unsigned int, BattleMap* > BattleMaps;$/;"	t	language:C++
+DEFINES_H	Defines.h	9;"	d	language:C++
+GAMEHANDLER_H	GameHandler.h	9;"	d	language:C++
+GameHandler	GameHandler.h	/^    GameHandler(LockingQueue<msgData>* msgQueue, RedisClient* redis) : mMsgQueue(msgQueue), mRedis(redis) {$/;"	f	language:C++	class:GameHandler	access:public	signature:(LockingQueue<msgData>* msgQueue, RedisClient* redis)
+GameHandler	GameHandler.h	/^class GameHandler {$/;"	c	language:C++
+GameHandler::GameHandler	GameHandler.h	/^    GameHandler(LockingQueue<msgData>* msgQueue, RedisClient* redis) : mMsgQueue(msgQueue), mRedis(redis) {$/;"	f	language:C++	class:GameHandler	access:public	signature:(LockingQueue<msgData>* msgQueue, RedisClient* redis)
+GameHandler::handleMsg	GameHandler.cpp	/^void GameHandler::handleMsg() {$/;"	f	language:C++	class:GameHandler	signature:()
+GameHandler::handleMsg	GameHandler.h	/^    void handleMsg();$/;"	p	language:C++	class:GameHandler	access:public	signature:()
+GameHandler::mMsgQueue	GameHandler.h	/^    LockingQueue<msgData>* mMsgQueue;$/;"	m	language:C++	class:GameHandler	access:private
+GameHandler::mRedis	GameHandler.h	/^    RedisClient* mRedis;$/;"	m	language:C++	class:GameHandler	access:private
+GameHandler::sendMsg	GameHandler.h	/^    void sendMsg();$/;"	p	language:C++	class:GameHandler	access:public	signature:()
+LockingQueue	LockingQueue.h	/^    explicit LockingQueue()$/;"	f	language:C++	class:LockingQueue	access:public	signature:()
+LockingQueue	LockingQueue.h	/^    explicit LockingQueue(const container_type& other)$/;"	f	language:C++	class:LockingQueue	access:public	signature:(const container_type& other)
+LockingQueue	LockingQueue.h	/^class LockingQueue : boost::noncopyable {$/;"	c	language:C++	inherits:boost::noncopyable
+LockingQueue::LockingQueue	LockingQueue.h	/^    explicit LockingQueue()$/;"	f	language:C++	class:LockingQueue	access:public	signature:()
+LockingQueue::LockingQueue	LockingQueue.h	/^    explicit LockingQueue(const container_type& other)$/;"	f	language:C++	class:LockingQueue	access:public	signature:(const container_type& other)
+LockingQueue::all_tasks_done	LockingQueue.h	/^    mutable boost::condition_variable all_tasks_done;$/;"	m	language:C++	class:LockingQueue	access:private
+LockingQueue::container	LockingQueue.h	/^    container_type container;$/;"	m	language:C++	class:LockingQueue	access:private
+LockingQueue::container_type	LockingQueue.h	/^    typedef Container container_type;$/;"	t	language:C++	class:LockingQueue	access:public
+LockingQueue::empty	LockingQueue.h	/^    bool empty() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+LockingQueue::join	LockingQueue.h	/^    void join() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+LockingQueue::lock_guard	LockingQueue.h	/^    typedef boost::lock_guard<boost::mutex> lock_guard;$/;"	t	language:C++	class:LockingQueue	access:private
+LockingQueue::mutex	LockingQueue.h	/^    mutable boost::mutex mutex;$/;"	m	language:C++	class:LockingQueue	access:private
+LockingQueue::non_empty	LockingQueue.h	/^    mutable boost::condition_variable non_empty;$/;"	m	language:C++	class:LockingQueue	access:private
+LockingQueue::pop	LockingQueue.h	/^    value_type pop(bool block = false, int timeout = 0) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(bool block = false, int timeout = 0)
+LockingQueue::pop_common	LockingQueue.h	/^    void pop_common(boost::mutex::scoped_lock& lock, bool block, int timeout) {$/;"	f	language:C++	class:LockingQueue	access:private	signature:(boost::mutex::scoped_lock& lock, bool block, int timeout)
+LockingQueue::pop_safe	LockingQueue.h	/^    void pop_safe(value_type& element, bool block = false, int timeout = 0) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(value_type& element, bool block = false, int timeout = 0)
+LockingQueue::push	LockingQueue.h	/^    void push(const value_type& element) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(const value_type& element)
+LockingQueue::queue_empty	LockingQueue.h	/^    class queue_empty {};$/;"	c	language:C++	class:LockingQueue	access:public
+LockingQueue::size	LockingQueue.h	/^    size_type size() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+LockingQueue::size_type	LockingQueue.h	/^    typedef typename Container::size_type size_type;$/;"	t	language:C++	class:LockingQueue	access:public
+LockingQueue::task_done	LockingQueue.h	/^    void task_done() {$/;"	f	language:C++	class:LockingQueue	access:public	signature:()
+LockingQueue::unfinished_tasks	LockingQueue.h	/^    unsigned long unfinished_tasks;$/;"	m	language:C++	class:LockingQueue	access:private
+LockingQueue::value_type	LockingQueue.h	/^    typedef typename Container::value_type value_type;$/;"	t	language:C++	class:LockingQueue	access:public
+OnlinePlayersMAP	PlayerManager.h	/^typedef std::map<unsigned int, long> OnlinePlayersMAP;$/;"	t	language:C++
+PLAYERMANAGER	PlayerManager.h	2;"	d	language:C++
+PlayerPairs	BattleMapManager.h	/^typedef std::map<unsigned int, unsigned int> PlayerPairs;$/;"	t	language:C++
+SECONDS_PER_BATTLE	Defines.h	13;"	d	language:C++
+SERVER_TICK_TIME	Defines.h	11;"	d	language:C++
+THREE_STAR_REWARD	Defines.h	12;"	d	language:C++
+TIMER_H	Timer.h	2;"	d	language:C++
+Timer	Timer.cpp	/^    Timer::Timer(unsigned int ms, bool createActive) {$/;"	f	language:C++	class:utils::Timer	signature:(unsigned int ms, bool createActive)
+Timer	Timer.h	/^        Timer(unsigned int ms, bool createActive = true);$/;"	p	language:C++	class:utils::Timer	access:public	signature:(unsigned int ms, bool createActive = true)
+Timer	Timer.h	/^    class Timer {$/;"	c	language:C++	namespace:utils
+active	Timer.h	/^        bool active;$/;"	m	language:C++	class:utils::Timer	access:private
+all_tasks_done	LockingQueue.h	/^    mutable boost::condition_variable all_tasks_done;$/;"	m	language:C++	class:LockingQueue	access:private
+attackerID	BattleMap.h	/^    unsigned int attackerID;$/;"	m	language:C++	class:BattleMap	access:private
+battleMaps	BattleMapManager.cpp	/^static BattleMaps battleMaps;$/;"	v	language:C++	file:
+changeInterval	Timer.cpp	/^    void Timer::changeInterval(unsigned int newinterval) {$/;"	f	language:C++	class:utils::Timer	signature:(unsigned int newinterval)
+changeInterval	Timer.h	/^        void changeInterval(unsigned int newinterval);$/;"	p	language:C++	class:utils::Timer	access:public	signature:(unsigned int newinterval)
+closeGracefully	pvpServer.cpp	/^void closeGracefully(int) {$/;"	f	language:C++	signature:(int)
+container	LockingQueue.h	/^    container_type container;$/;"	m	language:C++	class:LockingQueue	access:private
+container_type	LockingQueue.h	/^    typedef Container container_type;$/;"	t	language:C++	class:LockingQueue	access:public
+data	GameHandler.h	/^    std::string data;$/;"	m	language:C++	struct:msgData	access:public
+defenderID	BattleMap.h	/^    unsigned int defenderID;$/;"	m	language:C++	class:BattleMap	access:private
+deinitialize	BattleMapManager.cpp	/^void deinitialize() {$/;"	f	language:C++	signature:()
+deinitialize	BattleMapManager.h	/^void deinitialize();$/;"	p	language:C++	signature:()
+deinitializeBattleMap	BattleMapManager.cpp	/^void deinitializeBattleMap(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+deinitializeBattleMap	BattleMapManager.h	/^void deinitializeBattleMap(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+empty	LockingQueue.h	/^    bool empty() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+getAtkerID	BattleMap.h	/^    unsigned int getAtkerID() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getAtkerPoint	BattleMap.h	/^    int getAtkerPoint() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getBattleMap	BattleMapManager.cpp	/^BattleMap* getBattleMap(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+getBattleMap	BattleMapManager.h	/^BattleMap* getBattleMap(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+getBattleMaps	BattleMapManager.cpp	/^BattleMaps const &getBattleMaps() {$/;"	f	language:C++	signature:()
+getBattleMaps	BattleMapManager.h	/^BattleMaps const &getBattleMaps();$/;"	p	language:C++	signature:()
+getConcreteLoot	BattleMap.h	/^    int getConcreteLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getCurTick	BattleMap.h	/^    unsigned short getCurTick() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getDfderID	BattleMap.h	/^    unsigned int getDfderID() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getDfderPoint	BattleMap.h	/^    int getDfderPoint() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getIsStart	BattleMap.h	/^    bool getIsStart() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getOreLoot	BattleMap.h	/^    int getOreLoot()const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getPeerUid	BattleMapManager.cpp	/^unsigned int getPeerUid(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+getPeerUid	BattleMapManager.h	/^unsigned int getPeerUid(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+getStarNum	BattleMap.h	/^    unsigned short getStarNum() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getStoneLoot	BattleMap.h	/^    int getStoneLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+getTimeInMillisec	Timer.cpp	/^    uint64_t Timer::getTimeInMillisec() {$/;"	f	language:C++	class:utils::Timer	signature:()
+getTimeInMillisec	Timer.h	/^        uint64_t getTimeInMillisec();$/;"	p	language:C++	class:utils::Timer	access:private	signature:()
+getWoodLoot	BattleMap.h	/^    int getWoodLoot() const {$/;"	f	language:C++	class:BattleMap	access:public	signature:() const
+handleMsg	GameHandler.cpp	/^void GameHandler::handleMsg() {$/;"	f	language:C++	class:GameHandler	signature:()
+handleMsg	GameHandler.h	/^    void handleMsg();$/;"	p	language:C++	class:GameHandler	access:public	signature:()
+handleOriginalMsg	pvpServer.cpp	/^void handleOriginalMsg(const char* data, size_t size) {$/;"	f	language:C++	signature:(const char* data, size_t size)
+insertBattleMap	BattleMapManager.cpp	/^bool insertBattleMap(unsigned int uid, BattleMap* item) {$/;"	f	language:C++	signature:(unsigned int uid, BattleMap* item)
+insertBattleMap	BattleMapManager.h	/^bool insertBattleMap(unsigned int uid, BattleMap* item);$/;"	p	language:C++	signature:(unsigned int uid, BattleMap* item)
+interval	Timer.h	/^        unsigned int interval;$/;"	m	language:C++	class:utils::Timer	access:private
+isAttackerOrDefender	BattleMapManager.cpp	/^int isAttackerOrDefender(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+isAttackerOrDefender	BattleMapManager.h	/^int isAttackerOrDefender(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+isOnline	PlayerManager.cpp	/^bool isOnline(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+isOnline	PlayerManager.h	/^bool isOnline(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+iter	PlayerManager.cpp	/^static OnlinePlayersMAP::iterator iter;$/;"	v	language:C++	file:
+join	LockingQueue.h	/^    void join() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+lastpulse	Timer.h	/^        uint64_t lastpulse;$/;"	m	language:C++	class:utils::Timer	access:private
+len	GameHandler.h	/^    size_t len;$/;"	m	language:C++	struct:msgData	access:public
+lock_guard	LockingQueue.h	/^    typedef boost::lock_guard<boost::mutex> lock_guard;$/;"	t	language:C++	class:LockingQueue	access:private
+mAtkerPoint	BattleMap.h	/^    int mAtkerPoint;$/;"	m	language:C++	class:BattleMap	access:private
+mBuildingNum	BattleMap.h	/^    unsigned int mBuildingNum; \/\/建筑总数$/;"	m	language:C++	class:BattleMap	access:private
+mConcreteLoot	BattleMap.h	/^    int mConcreteLoot;$/;"	m	language:C++	class:BattleMap	access:private
+mDfderPoint	BattleMap.h	/^    int mDfderPoint;$/;"	m	language:C++	class:BattleMap	access:private
+mDiedBuildingNum	BattleMap.h	/^    unsigned int mDiedBuildingNum;$/;"	m	language:C++	class:BattleMap	access:private
+mIsStart	BattleMap.h	/^    bool mIsStart;$/;"	m	language:C++	class:BattleMap	access:private
+mMsgQueue	GameHandler.h	/^    LockingQueue<msgData>* mMsgQueue;$/;"	m	language:C++	class:GameHandler	access:private
+mOreLoot	BattleMap.h	/^    int mOreLoot;$/;"	m	language:C++	class:BattleMap	access:private
+mRedis	GameHandler.h	/^    RedisClient* mRedis;$/;"	m	language:C++	class:GameHandler	access:private
+mRedis	pvpServer.cpp	/^RedisClient* mRedis;$/;"	v	language:C++
+mStarNum	BattleMap.h	/^    unsigned short mStarNum; \/\/星级$/;"	m	language:C++	class:BattleMap	access:private
+mStoneLoot	BattleMap.h	/^    int mStoneLoot;$/;"	m	language:C++	class:BattleMap	access:private
+mTicks	BattleMap.h	/^    unsigned int mTicks; \/\/节拍计数, 三分钟计时, 3min = 180s = 1800*100ms$/;"	m	language:C++	class:BattleMap	access:private
+mTownhallIsDied	BattleMap.h	/^    bool mTownhallIsDied; \/\/市政厅是否已摧毁$/;"	m	language:C++	class:BattleMap	access:private
+mWoodLoot	BattleMap.h	/^    int mWoodLoot;$/;"	m	language:C++	class:BattleMap	access:private
+main	pvpServer.cpp	/^int main() {$/;"	f	language:C++	signature:()
+msgData	GameHandler.h	/^struct msgData {$/;"	s	language:C++
+msgData::data	GameHandler.h	/^    std::string data;$/;"	m	language:C++	struct:msgData	access:public
+msgData::len	GameHandler.h	/^    size_t len;$/;"	m	language:C++	struct:msgData	access:public
+msgQueue	pvpServer.cpp	/^LockingQueue<msgData>* msgQueue;$/;"	v	language:C++
+msgSender	pvpServer.cpp	/^WorkerSender* msgSender;$/;"	v	language:C++
+msgWorker	pvpServer.cpp	/^mdwrk* msgWorker;$/;"	v	language:C++
+mutex	LockingQueue.h	/^    mutable boost::mutex mutex;$/;"	m	language:C++	class:LockingQueue	access:private
+non_empty	LockingQueue.h	/^    mutable boost::condition_variable non_empty;$/;"	m	language:C++	class:LockingQueue	access:private
+onlinePlayers	PlayerManager.cpp	/^static OnlinePlayersMAP onlinePlayers;$/;"	v	language:C++	file:
+onlinePlayers	pvpServer.cpp	/^std::map<unsigned int, long>* onlinePlayers;$/;"	v	language:C++
+playerPairs	BattleMapManager.cpp	/^static PlayerPairs playerPairs;$/;"	v	language:C++	file:
+plusCurTick	BattleMap.h	/^    void plusCurTick() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+plusDiedBuildingNum	BattleMap.h	/^    void plusDiedBuildingNum() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+poll	Timer.cpp	/^    int Timer::poll() {$/;"	f	language:C++	class:utils::Timer	signature:()
+poll	Timer.h	/^        int poll();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+pop	LockingQueue.h	/^    value_type pop(bool block = false, int timeout = 0) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(bool block = false, int timeout = 0)
+pop_common	LockingQueue.h	/^    void pop_common(boost::mutex::scoped_lock& lock, bool block, int timeout) {$/;"	f	language:C++	class:LockingQueue	access:private	signature:(boost::mutex::scoped_lock& lock, bool block, int timeout)
+pop_safe	LockingQueue.h	/^    void pop_safe(value_type& element, bool block = false, int timeout = 0) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(value_type& element, bool block = false, int timeout = 0)
+push	LockingQueue.h	/^    void push(const value_type& element) {$/;"	f	language:C++	class:LockingQueue	access:public	signature:(const value_type& element)
+queue_empty	LockingQueue.h	/^    class queue_empty {};$/;"	c	language:C++	class:LockingQueue	access:public
+running	pvpServer.cpp	/^bool running = true; \/**< Determines if server keeps running *\/$/;"	v	language:C++
+sendMsg	GameHandler.h	/^    void sendMsg();$/;"	p	language:C++	class:GameHandler	access:public	signature:()
+setConcreteLoot	BattleMap.h	/^    void setConcreteLoot(int concreteLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int concreteLoot)
+setIsStart	BattleMap.h	/^    void setIsStart(bool isStart) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(bool isStart)
+setOreLoot	BattleMap.h	/^    void setOreLoot(int oreLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int oreLoot)
+setStoneLoot	BattleMap.h	/^    void setStoneLoot(int stoneLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int stoneLoot)
+setTownhallDied	BattleMap.h	/^    void setTownhallDied() {$/;"	f	language:C++	class:BattleMap	access:public	signature:()
+setWoodLoot	BattleMap.h	/^    void setWoodLoot(int woodLoot) {$/;"	f	language:C++	class:BattleMap	access:public	signature:(int woodLoot)
+size	LockingQueue.h	/^    size_type size() const {$/;"	f	language:C++	class:LockingQueue	access:public	signature:() const
+size_type	LockingQueue.h	/^    typedef typename Container::size_type size_type;$/;"	t	language:C++	class:LockingQueue	access:public
+sleep	Timer.cpp	/^    void Timer::sleep() {$/;"	f	language:C++	class:utils::Timer	signature:()
+sleep	Timer.h	/^        void sleep();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+start	Timer.cpp	/^    void Timer::start() {$/;"	f	language:C++	class:utils::Timer	signature:()
+start	Timer.h	/^        void start();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+stop	Timer.cpp	/^    void Timer::stop() {$/;"	f	language:C++	class:utils::Timer	signature:()
+stop	Timer.h	/^        void stop();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+task_done	LockingQueue.h	/^    void task_done() {$/;"	f	language:C++	class:LockingQueue	access:public	signature:()
+unfinished_tasks	LockingQueue.h	/^    unsigned long unfinished_tasks;$/;"	m	language:C++	class:LockingQueue	access:private
+update	BattleMap.cpp	/^void BattleMap::update() {$/;"	f	language:C++	class:BattleMap	signature:()
+update	BattleMap.h	/^    void update();$/;"	p	language:C++	class:BattleMap	access:public	signature:()
+updateBattleMaps	BattleMapManager.cpp	/^void updateBattleMaps() {$/;"	f	language:C++	signature:()
+updateBattleMaps	BattleMapManager.h	/^void updateBattleMaps();$/;"	p	language:C++	signature:()
+userLogin	PlayerManager.cpp	/^void userLogin(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+userLogin	PlayerManager.h	/^void userLogin(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+userLogout	PlayerManager.cpp	/^void userLogout(unsigned int uid) {$/;"	f	language:C++	signature:(unsigned int uid)
+userLogout	PlayerManager.h	/^void userLogout(unsigned int uid);$/;"	p	language:C++	signature:(unsigned int uid)
+utils	Timer.cpp	/^namespace utils {$/;"	n	language:C++	file:
+utils	Timer.h	/^namespace utils {$/;"	n	language:C++
+utils::Timer	Timer.h	/^    class Timer {$/;"	c	language:C++	namespace:utils
+utils::Timer::Timer	Timer.cpp	/^    Timer::Timer(unsigned int ms, bool createActive) {$/;"	f	language:C++	class:utils::Timer	signature:(unsigned int ms, bool createActive)
+utils::Timer::Timer	Timer.h	/^        Timer(unsigned int ms, bool createActive = true);$/;"	p	language:C++	class:utils::Timer	access:public	signature:(unsigned int ms, bool createActive = true)
+utils::Timer::active	Timer.h	/^        bool active;$/;"	m	language:C++	class:utils::Timer	access:private
+utils::Timer::changeInterval	Timer.cpp	/^    void Timer::changeInterval(unsigned int newinterval) {$/;"	f	language:C++	class:utils::Timer	signature:(unsigned int newinterval)
+utils::Timer::changeInterval	Timer.h	/^        void changeInterval(unsigned int newinterval);$/;"	p	language:C++	class:utils::Timer	access:public	signature:(unsigned int newinterval)
+utils::Timer::getTimeInMillisec	Timer.cpp	/^    uint64_t Timer::getTimeInMillisec() {$/;"	f	language:C++	class:utils::Timer	signature:()
+utils::Timer::getTimeInMillisec	Timer.h	/^        uint64_t getTimeInMillisec();$/;"	p	language:C++	class:utils::Timer	access:private	signature:()
+utils::Timer::interval	Timer.h	/^        unsigned int interval;$/;"	m	language:C++	class:utils::Timer	access:private
+utils::Timer::lastpulse	Timer.h	/^        uint64_t lastpulse;$/;"	m	language:C++	class:utils::Timer	access:private
+utils::Timer::poll	Timer.cpp	/^    int Timer::poll() {$/;"	f	language:C++	class:utils::Timer	signature:()
+utils::Timer::poll	Timer.h	/^        int poll();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+utils::Timer::sleep	Timer.cpp	/^    void Timer::sleep() {$/;"	f	language:C++	class:utils::Timer	signature:()
+utils::Timer::sleep	Timer.h	/^        void sleep();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+utils::Timer::start	Timer.cpp	/^    void Timer::start() {$/;"	f	language:C++	class:utils::Timer	signature:()
+utils::Timer::start	Timer.h	/^        void start();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+utils::Timer::stop	Timer.cpp	/^    void Timer::stop() {$/;"	f	language:C++	class:utils::Timer	signature:()
+utils::Timer::stop	Timer.h	/^        void stop();$/;"	p	language:C++	class:utils::Timer	access:public	signature:()
+value_type	LockingQueue.h	/^    typedef typename Container::value_type value_type;$/;"	t	language:C++	class:LockingQueue	access:public
+worldTime	pvpServer.cpp	/^int worldTime = 0; \/**< Current world time in 100ms ticks *\/$/;"	v	language:C++
+~BattleMap	BattleMap.cpp	/^BattleMap::~BattleMap() {$/;"	f	language:C++	class:BattleMap	signature:()
+~BattleMap	BattleMap.h	/^    ~BattleMap();$/;"	p	language:C++	class:BattleMap	access:public	signature:()
